@@ -5,7 +5,7 @@ export default function Home({props}) {
                 <div className="container">
                     <div className="home_header">
                         <div className="img_profile">
-                            <img src="/icon_profile.svg" alt="" />
+                            <img src="icon_profile.svg" alt="" />
                         </div>
                         <div className="header_text">
                             <div className="header_greeting">
