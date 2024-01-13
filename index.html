@@ -10,5 +10,12 @@
   </head>
   <body>
     <div id="root"></div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+      const tg = window.Telegram.WebApp;
+      console.log(tg.initDataUnsafe.user.id)
+      document.querySelector('.user_data').innerText = tg.initDataUnsafe.user.id;
+    </script>
+          <div class="user_data"></div>
   </body>
 </html>
