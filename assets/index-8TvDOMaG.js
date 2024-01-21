@@ -193,7 +193,7 @@ Error generating stack: `+s.message+`
         position: relative;
     `;function Qa({...e}){const t=e.activeLink,n=ct.div`
     background-color: #9048EC;
-    padding: ${t==="AddNew"?"":"1rem"};
+    padding: ${t==="AddNew"?"1rem 10%":"1rem"};
     color: #ffffff;
     border-radius: 20px;
     position: absolute;
