@@ -70,6 +70,36 @@ const DatePickerWrapper = styled.div`
 
 const SelectLabel = styled.div``
 
+const Textarea = styled.textarea`
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #EAEAEA;
+    outline: none;
+    border: none;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 10px;
+    color: #000000;
+    font-family: Inter;
+    margin: 1rem auto 0 auto;
+    padding: .5rem;
+    position: relative;
+
+    &:hover,&:focus, &:focus-visible {
+        outline: none;
+        border: none;
+
+    }
+    &::placeholder{
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 10px;
+        font-family: Inter;
+        color: #7F7F7F;
+    }
+
+`
 
 export default function AddPaymentCard({...props}) {
 
@@ -86,7 +116,7 @@ export default function AddPaymentCard({...props}) {
 
     const dispatch = useDispatch();
     const inputVal = useSelector(state => state.options.inputVal)
-    
+    const areaVal = useSelector(state => state.options.areaVal)
     const selectedDate = useSelector(state => state.date.currentDate)
     const isHidden = useSelector(state => state.date.hidden)
 
@@ -122,8 +152,10 @@ export default function AddPaymentCard({...props}) {
                         />
                 
                 ))}
-
                 
+                <Textarea onChange={(e) => {dispatch({type: "CHANGE_TEXTAREAINPUT_VALUE", payload: e.target.text})}} placeholder="Comment text." id={'commentForPayment'} name="commentForPayment"></Textarea>            
+               
+
         </Card>
     )
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { useDispatch, useSelector} from "react-redux"
+import { useDispatch} from "react-redux"
 
 export default function CategoryLabel({...props}) {
    
@@ -24,7 +24,7 @@ export default function CategoryLabel({...props}) {
         font-weight: 400;
         cursor: pointer;
         -webkit-filter: grayscale(${isHighlighted ? '00%' : '40%'});
-        filter: grayscale(${isHighlighted ? '00%' : '4  0%'});
+        filter: grayscale(${isHighlighted ? '00%' : '40%'});
     `
     return (
         <>
