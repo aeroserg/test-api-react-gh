@@ -20,3 +20,37 @@ main.l-section {
   font-weight: 600;
   font-size: 18px;
 }
+
+.p-calendar {
+  padding: .5rem;
+  font-family: Inter;
+}
+.p-datepicker-calendar {
+  font-size: 14px;
+}
+th[data-pc-section="tableheadercell"] {
+  text-align: center;
+}
+.p-datepicker td > span { 
+  padding: 0.2rem 0;
+}
+
+.p-datepicker-next {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.p-datepicker-prev {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.p-datepicker-header {
+  margin-bottom: .5rem;
+}
+[data-p-other-month="true"] {
+  color:#b4b4b4;
+}
+/* .diw {
+  color:#8ddc58;
+} */
